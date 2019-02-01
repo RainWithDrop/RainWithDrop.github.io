@@ -79,17 +79,17 @@
 
 
 
-<meta name="description" content="Josephus ProblemLegend has it that Josephus wouldn’t have lived to become famous without his math-ematical talents. During the Jewish-Roman war, he was among a band of 41 Jewish rebels trapped in a ca">
+<meta name="description" content="Notation\sum_{P(k)}a_k an abbreviation for the sum of all terms $a_k$ such that $k$ is an integer satisfying a given property $P(k)$  for each given $k$, there is one and only one $a_k​$.">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Josephus problem">
-<meta property="og:url" content="http://yoursite.com/2019/01/31/Josephus problem/index.html">
+<meta property="og:title" content="sums">
+<meta property="og:url" content="http://yoursite.com/2019/02/01/sums/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="Josephus ProblemLegend has it that Josephus wouldn’t have lived to become famous without his math-ematical talents. During the Jewish-Roman war, he was among a band of 41 Jewish rebels trapped in a ca">
+<meta property="og:description" content="Notation\sum_{P(k)}a_k an abbreviation for the sum of all terms $a_k$ such that $k$ is an integer satisfying a given property $P(k)$  for each given $k$, there is one and only one $a_k​$.">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-02-01T13:09:57.425Z">
+<meta property="og:updated_time" content="2019-02-01T13:15:48.331Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Josephus problem">
-<meta name="twitter:description" content="Josephus ProblemLegend has it that Josephus wouldn’t have lived to become famous without his math-ematical talents. During the Jewish-Roman war, he was among a band of 41 Jewish rebels trapped in a ca">
+<meta name="twitter:title" content="sums">
+<meta name="twitter:description" content="Notation\sum_{P(k)}a_k an abbreviation for the sum of all terms $a_k$ such that $k$ is an integer satisfying a given property $P(k)$  for each given $k$, there is one and only one $a_k​$.">
 
 
 
@@ -119,13 +119,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2019/01/31/Josephus problem/">
+  <link rel="canonical" href="http://yoursite.com/2019/02/01/sums/">
 
 
 
 
 
-  <title>Josephus problem | Hexo</title>
+  <title>sums | Hexo</title>
   
 
 
@@ -232,7 +232,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/01/31/Josephus problem/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/02/01/sums/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="John Doe">
@@ -249,7 +249,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Josephus problem</h1>
+          <h1 class="post-title" itemprop="name headline">sums</h1>
         
 
         <div class="post-meta">
@@ -261,8 +261,8 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-01-31T09:46:01+08:00">
-                2019-01-31
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-02-01T21:08:43+08:00">
+                2019-02-01
               </time>
             
 
@@ -295,8 +295,8 @@
                 
               
                 <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
-                  <a href="/categories/Concrete-Math/Floors-and-Ceilings/" itemprop="url" rel="index">
-                    <span itemprop="name">Floors and Ceilings</span>
+                  <a href="/categories/Concrete-Math/Sums/" itemprop="url" rel="index">
+                    <span itemprop="name">Sums</span>
                   </a>
                 </span>
 
@@ -332,123 +332,47 @@
       
 
       
-        <h1 id="Josephus-Problem"><a href="#Josephus-Problem" class="headerlink" title="Josephus Problem"></a>Josephus Problem</h1><p>Legend has it that Josephus wouldn’t have lived to become famous without his math-ematical talents. During the Jewish-Roman war, he was among a band of 41 Jewish rebels trapped in a cave by the Romans. Preferring suicide to capture, the rebels decided to form a circle and, proceeding around it, to kill every third remaining person until no one was left. But Josephus, along with an unindicted co-conspirator, wanted none of this suicide nonsense; so he quickly calculated where he and his friend should stand in the vicious circle. But it is case of n=2, let’s consider more.</p>
+        <h1 id="Notation"><a href="#Notation" class="headerlink" title="Notation"></a>Notation</h1><script type="math/tex; mode=display">\sum_{P(k)}a_k</script><ul>
+<li><p>an abbreviation for the sum of all terms $a_k$ such that <strong>$k$ is an integer</strong> satisfying a given property $P(k)$</p>
+</li>
+<li><p>for each given $k$, there is one and only one $a_k​$.</p>
 <a id="more"></a>
-<h1 id="regularity-when-n-3"><a href="#regularity-when-n-3" class="headerlink" title="regularity when n = 3"></a>regularity when n = 3</h1><p>Whenever a person is passed over, we can assign a new number.<br>Thus, 1 and 2 become n+1 and n+2, then 3 is executed; 4 and 5 become<br>n+3 and n+4, then 6 is executed; …; 3k+1 and 3k+2 become n+2k+1<br>and n+2k+2, then 3k+3 is executed; … then 3n is executed (or left to<br>survive). For example, when n = 10 the numbers are</p>
-<div class="table-container">
-<table>
-<thead>
-<tr>
-<th style="text-align:center">1</th>
-<th style="text-align:center">2</th>
-<th style="text-align:center">3</th>
-<th style="text-align:center">4</th>
-<th style="text-align:center">5</th>
-<th style="text-align:center">6</th>
-<th style="text-align:center">7</th>
-<th style="text-align:center">8</th>
-<th style="text-align:center">9</th>
-<th style="text-align:center">10</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:center">11</td>
-<td style="text-align:center">12</td>
-<td style="text-align:center"></td>
-<td style="text-align:center">13</td>
-<td style="text-align:center">14</td>
-<td style="text-align:center"></td>
-<td style="text-align:center">15</td>
-<td style="text-align:center">16</td>
-<td style="text-align:center"></td>
-<td style="text-align:center">17</td>
-</tr>
-<tr>
-<td style="text-align:center">18</td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
-<td style="text-align:center">19</td>
-<td style="text-align:center">20</td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
-<td style="text-align:center">21</td>
-<td style="text-align:center"></td>
-<td style="text-align:center">22</td>
-</tr>
-<tr>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
-<td style="text-align:center">23</td>
-<td style="text-align:center">24</td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
-<td style="text-align:center">25</td>
-</tr>
-<tr>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
-<td style="text-align:center">26</td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
-<td style="text-align:center">27</td>
-</tr>
-<tr>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
-<td style="text-align:center">28</td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
-</tr>
-<tr>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
-<td style="text-align:center">29</td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
-</tr>
-<tr>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
-<td style="text-align:center">30</td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
-</tr>
-</tbody>
-</table>
-</div>
-<h1 id="process-of-analysing"><a href="#process-of-analysing" class="headerlink" title="process of analysing"></a>process of analysing</h1><ul>
-<li>Given N &gt; n, we can infer N is $n+2k+1$(when previous number is $3k+1$) or $n+2k+2$(when previous number is $3k+2$)  by observing above queue.</li>
-<li>$\frac{N-n-1}{2} - 1  = \frac{N-n-3}{2}  &lt; \frac{N-n-2}{2} \leqslant k \leqslant \frac{N-n-1}{2} $, hence $k = \lfloor \frac{N-n-1}{2} \rfloor$.</li>
-<li>Previous number is $3k+(N-n-2k)=k+N-n =  \lfloor \frac{N-n-1}{2} \rfloor+N-n ​$.</li>
-<li>When N = 3n, it must have previous number $N_p = \lfloor \frac{N-n-1}{2} \rfloor+N-n$. It is fine until $N_p \leqslant n$, then we have an answer.</li>
-</ul>
-<h1 id="Simplify-the-form"><a href="#Simplify-the-form" class="headerlink" title="Simplify the form"></a>Simplify the form</h1><ul>
-<li>use the variable $D = 3n + 1 − N$ in place of $N$.<script type="math/tex; mode=display">
-D:=1;\\
-while \ \ D\leqslant 2n \ \ do \ \ D:=\left \lceil \frac{3}{2}D \right \rceil; \\
-J3(n) := 3n+1−D</script></li>
+<h1 id="Sums-and-Recurrences"><a href="#Sums-and-Recurrences" class="headerlink" title="Sums and Recurrences"></a>Sums and Recurrences</h1></li>
+<li><p>recurrence:</p>
+<script type="math/tex; mode=display">C_0 = 0; \\ C_n = n + 1 + \frac{2}{n}\sum_{k=0}^{n-1}C_k,\ \ \ for \ n > 0</script></li>
+<li><p>multiple both sides by n, obtaining the relation $\mathcal{A}$</p>
+<script type="math/tex; mode=display">nC_n = n^2 + n + 2\sum_{k=0}^{n-1}C_k,\ \ \ for \ n > 0</script></li>
+<li>replace n by n-1 $\mathcal{B}$<script type="math/tex; mode=display">(n-1)C_{n-1} = (n-1)^2 + (n-1) + 2\sum_{k=0}^{n-2}C_k,\ \ \ for \ n-1 > 0</script></li>
+<li>$\mathcal{A}$ - $\mathcal{B}$ $\to$ $\mathcal{C}$<script type="math/tex; mode=display">nC_n - (n-1)C_{n-1} = 2n + 2C_{n-1},\ \ \ for \ n > 1</script></li>
+<li>because $C_1 = 2$ satisfies $\mathcal{C}$, we get a simpler recurrence:<script type="math/tex; mode=display">C_0 = 0; \\ nC_n = (n+1)C_{n-1} + 2n,\ \ \ for \ n > 0</script></li>
+<li>since $a_n = n, b_n = n+1$, the recurrence can be multiplied with <script type="math/tex; mode=display">s_n = \frac{a_{n-1}a_{n-2}\cdots a_1}{b_nb_{n-1}\cdots b_2} = \frac{(n-1)\cdot(n-2)\cdots 1}{(n+1)\cdot n \cdots 3} = \frac{2}{(n+1)n}</script></li>
+<li>it turns out <script type="math/tex; mode=display">\frac{C_n}{n+1} = \frac{C_{n-1}}{n} + \frac{2}{n+1}</script></li>
+<li>therefore<script type="math/tex; mode=display">C_n = 2(n+1)\sum_{k=1}^{n}\frac{1}{k+1}</script></li>
+<li>chang k to k-1<script type="math/tex; mode=display">\sum_{1\leqslant k \leqslant n}\frac{1}{k+1} = \sum_{2\leqslant k \leqslant n+1}\frac{1}{k} = (\sum_{1\leqslant k \leqslant n}\frac{1}{k}) - 1 + \frac{1}{n+1} = H_n - \frac{n}{n+1}</script></li>
+<li>therefore<script type="math/tex; mode=display">C_n = 2(n+1)H_n - 2n</script><h1 id="Manipluation-of-Sums"><a href="#Manipluation-of-Sums" class="headerlink" title="Manipluation of Sums"></a>Manipluation of Sums</h1></li>
+<li><em>distributive law</em><script type="math/tex; mode=display">\sum_{k \in K}ca_k = c\sum_{k\in K}a_k</script></li>
+<li><em>associative law</em><script type="math/tex; mode=display">\sum_{k\in K}(a_k + b_k) = \sum_{k\in K}a_k + \sum_{k\in K}b_k</script></li>
+<li><em>commutative law</em><script type="math/tex; mode=display">\sum_{k\in K}a_k = \sum_{p(k)\in K} a_{p(k)}</script></li>
+<li>if K and $k^{\prime}$ are any sets of integers, then<script type="math/tex; mode=display">\sum_{k\in K}a_k + \sum_{k\in K^{\prime}}a_k = \sum_{k\in K\cap K^{\prime}}a_k +\sum_{k\in K\cup K^{\prime}}a_k</script><h1 id="Multiple-Sums"><a href="#Multiple-Sums" class="headerlink" title="Multiple Sums"></a>Multiple Sums</h1></li>
+<li>if P(j,k) is a property of j and k, the sum of all terms $a_{j,k}$ such that P(j,k) is true can be written in two ways<script type="math/tex; mode=display">\sum_{P(j,k)}a_{j,k} = \sum_{j,k}a_{j,k}[P(j,k)]</script></li>
+<li><em>interchanging the order of summation</em><script type="math/tex; mode=display">\sum_j\sum_k a_{j,k}[P(j,k)] = \sum_{P(j,k)}a_{j,k} = \sum_k\sum_j a_{j,k}[P(j,k)]</script></li>
+<li><em>general distributive law</em><script type="math/tex; mode=display">\sum_{j\in J\\ k\in K} a_jb_k = (\sum_{j\in J}a_j)(\sum_{k\in K}b_k)</script></li>
+<li>it applies when the range of an inner sum depends on the index variable of the outer sum:<script type="math/tex; mode=display">\sum_{j\in J}\sum_{k\in K(j)}a_{j,k} = \sum_{k\in K^{\prime}}\sum_{j\in J^{\prime}(k)}a_{j,k}</script>Here the sets J, K(j), K′, and J′(k) must be related in such a way that<script type="math/tex; mode=display">[j\in J][k\in K(j)] = [k\in K^{\prime}][j\in J^{\prime}(k)]</script>A factorization like this is always possible in principle, because we can let J = K′ be the set of all integers and K(j) = J′(k) be the basic property P(j,k) that governs a double sum.<h1 id="Finite-and-Infinite-Calculus"><a href="#Finite-and-Infinite-Calculus" class="headerlink" title="Finite and Infinite Calculus"></a>Finite and Infinite Calculus</h1></li>
+<li><em>difference</em> operator<script type="math/tex; mode=display">\triangle f(x) = f(x+1) - f(x)</script></li>
+<li>there is a type of “mth power” that does transform nicely under ∆, and this is what makes finite calculus interesting. Such newfangled mth powers are defined by the rule<script type="math/tex; mode=display">x^{\underline{m}} = \overbrace{ x(x-1)\cdots(x-m+1) }^{m \ \ factors}, \ \ \ integer \ \ m \geqslant 0\\ x^{\overline{m}} = \overbrace{ x(x+1)\cdots(x+m-1) }^{m \ \ factors}, \ \ \ integer \ \ m \geqslant 0</script></li>
+<li>falling powers $x^{\underline{m}}$ are especially nice with respect to ∆. We have<script type="math/tex; mode=display">\triangle(x^{\underline{m}}) = m x^{\underline{m-1}}</script></li>
+<li>there’s another Fundamental Theorem<script type="math/tex; mode=display">g(x) = \triangle f(x) \ \ \ \ if \ \  and \ \ only \ \ if \ \ \ \sum g(x) \delta x = f(x) + C</script>Here $\sum g(x) \delta x$, the <em>indefinite sum</em> of g(x), is the class of functions whose <em>difference</em> is g(x). The “C” for indefinite integrals is an arbitrary constant; the “C” for indefinite sums is any function p(x) such that p(x + 1) = p(x). </li>
+<li>Therefore finite calculus — ever mimicking its more famous cousin — has definite <em>sums</em>: If g(x) = ∆f(x), then<script type="math/tex; mode=display">\textstyle \sum_a^b  g(x) \delta x = f(x)|_a^b = f(b) - f(a)</script></li>
+<li>These observations, and mathematical induction, allow us to deduce exactly<br>what $\sum_a^b  g(x) \delta x$ means in general, when a and b are integers with $b \geqslant a$:<script type="math/tex; mode=display">\textstyle \sum_a^b  g(x) \delta x = \sum_{k = a}^{b - 1} g(k) = \sum_{a\leqslant k < b} g(k), \ \ \ \ for \ integers \ b \geqslant a</script>But the rule applies only when $b \geqslant a$; what happens if b &lt; a? Well, (2.47) says that we must have<script type="math/tex; mode=display">\textstyle \sum_a^b  g(x) \delta x = f(b) - f(a) = -(f(a) - f(b)) = -\textstyle \sum_b^a  g(x) \delta x</script></li>
+<li>definite summation gives us a simple way to compute sums of falling powers:<script type="math/tex; mode=display">\sum_{0\leqslant k < n} k^{\underline{m}} = \frac{k^{\underline{m+1}}}{m+1}\Big|_0^n = \frac{n^{\underline{m}}}{m+1}\ \ \ for \ integers \ m,n \geqslant 0</script></li>
+<li>In particular, when m = 1 we have k1 = k, so the principles of finite<br>calculus give us an easy way to remember the fact that<script type="math/tex; mode=display">\sum_{0 \leqslant k < n}k = \frac{n^{\underline{2}}}{2} = \frac{n(n-1)}{2}</script>$k^2 = k^{\underline{2}} + k^{\underline{1}}$, hence<script type="math/tex; mode=display">\sum_{0 \leqslant k < n}k^2 = \frac{n^{\underline{3}}}{3} + \frac{n^{\underline{2}}}{2} = \frac{1}{3}n(n-1)(n-2+\frac{3}{2}) = \frac{1}{3}n(n-\frac{1}{2})(n-1)</script></li>
+<li>general definition for negative falling powers is<script type="math/tex; mode=display">x^{\underline{-m}} = \frac{1}{(x+1)(x+2)\cdots (x+m)}\ \ \ for \ m > 0</script></li>
+<li>general law of exponents<script type="math/tex; mode=display">x^{\underline{m+n}} = x^{\underline{m}}(x-m)^{\underline{n}}</script></li>
+<li>We can now give a complete description of the sums of falling powers:<script type="math/tex; mode=display">\textstyle \sum_a^b  x^{\underline{m}} \delta x = 
+\begin{cases}
+\frac{x^{\underline{m+1}}}{m+1}\Big|_a^b,\ \ if \ m \ne -1;\\ 
+H_x\Big|_a^b, \ if \ m = -1
+\end{cases}</script></li>
 </ul>
 
       
@@ -474,8 +398,8 @@ J3(n) := 3n+1−D</script></li>
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/10/28/index/" rel="next" title="Introduce">
-                <i class="fa fa-chevron-left"></i> Introduce
+              <a href="/2019/01/31/Josephus problem/" rel="next" title="Josephus problem">
+                <i class="fa fa-chevron-left"></i> Josephus problem
               </a>
             
           </div>
@@ -483,10 +407,6 @@ J3(n) := 3n+1−D</script></li>
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2019/02/01/sums/" rel="prev" title="sums">
-                sums <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -609,7 +529,7 @@ J3(n) := 3n+1−D</script></li>
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Josephus-Problem"><span class="nav-number">1.</span> <span class="nav-text">Josephus Problem</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#regularity-when-n-3"><span class="nav-number">2.</span> <span class="nav-text">regularity when n = 3</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#process-of-analysing"><span class="nav-number">3.</span> <span class="nav-text">process of analysing</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Simplify-the-form"><span class="nav-number">4.</span> <span class="nav-text">Simplify the form</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Notation"><span class="nav-number">1.</span> <span class="nav-text">Notation</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Sums-and-Recurrences"><span class="nav-number">2.</span> <span class="nav-text">Sums and Recurrences</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Manipluation-of-Sums"><span class="nav-number">3.</span> <span class="nav-text">Manipluation of Sums</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Multiple-Sums"><span class="nav-number">4.</span> <span class="nav-text">Multiple Sums</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Finite-and-Infinite-Calculus"><span class="nav-number">5.</span> <span class="nav-text">Finite and Infinite Calculus</span></a></li></ol></div>
             
 
           </div>
