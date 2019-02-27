@@ -79,17 +79,17 @@
 
 
 
-<meta name="description" content="Josephus ProblemLegend has it that Josephus wouldn’t have lived to become famous without his math-ematical talents. During the Jewish-Roman war, he was among a band of 41 Jewish rebels trapped in a ca">
+<meta name="description" content="Definition \dbinom{n}{k} = \begin{cases} \frac{r(r−1)\cdots(r−k+1)}{k(k − 1) \cdots(1)} = \frac{r^{\underline{k}}}{k!},&amp; integer\ k\geqslant 0;\\ 0, &amp; integer &amp;lt; 0; \end{cases}">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Josephus problem">
-<meta property="og:url" content="http://yoursite.com/2019/01/31/Josephus problem/index.html">
+<meta property="og:title" content="Binomial Coefficients">
+<meta property="og:url" content="http://yoursite.com/2019/02/02/Binomial-Coefficients/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="Josephus ProblemLegend has it that Josephus wouldn’t have lived to become famous without his math-ematical talents. During the Jewish-Roman war, he was among a band of 41 Jewish rebels trapped in a ca">
+<meta property="og:description" content="Definition \dbinom{n}{k} = \begin{cases} \frac{r(r−1)\cdots(r−k+1)}{k(k − 1) \cdots(1)} = \frac{r^{\underline{k}}}{k!},&amp; integer\ k\geqslant 0;\\ 0, &amp; integer &amp;lt; 0; \end{cases}">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-02-01T13:09:57.425Z">
+<meta property="og:updated_time" content="2019-02-02T07:32:58.507Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Josephus problem">
-<meta name="twitter:description" content="Josephus ProblemLegend has it that Josephus wouldn’t have lived to become famous without his math-ematical talents. During the Jewish-Roman war, he was among a band of 41 Jewish rebels trapped in a ca">
+<meta name="twitter:title" content="Binomial Coefficients">
+<meta name="twitter:description" content="Definition \dbinom{n}{k} = \begin{cases} \frac{r(r−1)\cdots(r−k+1)}{k(k − 1) \cdots(1)} = \frac{r^{\underline{k}}}{k!},&amp; integer\ k\geqslant 0;\\ 0, &amp; integer &amp;lt; 0; \end{cases}">
 
 
 
@@ -119,13 +119,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2019/01/31/Josephus problem/">
+  <link rel="canonical" href="http://yoursite.com/2019/02/02/Binomial-Coefficients/">
 
 
 
 
 
-  <title>Josephus problem | Hexo</title>
+  <title>Binomial Coefficients | Hexo</title>
   
 
 
@@ -232,7 +232,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/01/31/Josephus problem/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/02/02/Binomial-Coefficients/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="John Doe">
@@ -249,7 +249,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Josephus problem</h1>
+          <h1 class="post-title" itemprop="name headline">Binomial Coefficients</h1>
         
 
         <div class="post-meta">
@@ -261,8 +261,8 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-01-31T09:46:01+08:00">
-                2019-01-31
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-02-02T14:01:55+08:00">
+                2019-02-02
               </time>
             
 
@@ -295,8 +295,8 @@
                 
               
                 <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
-                  <a href="/categories/Concrete-Math/Floors-and-Ceilings/" itemprop="url" rel="index">
-                    <span itemprop="name">Floors and Ceilings</span>
+                  <a href="/categories/Concrete-Math/Binomial-Coefficients/" itemprop="url" rel="index">
+                    <span itemprop="name">Binomial Coefficients</span>
                   </a>
                 </span>
 
@@ -332,124 +332,110 @@
       
 
       
-        <h1 id="Josephus-Problem"><a href="#Josephus-Problem" class="headerlink" title="Josephus Problem"></a>Josephus Problem</h1><p>Legend has it that Josephus wouldn’t have lived to become famous without his math-ematical talents. During the Jewish-Roman war, he was among a band of 41 Jewish rebels trapped in a cave by the Romans. Preferring suicide to capture, the rebels decided to form a circle and, proceeding around it, to kill every third remaining person until no one was left. But Josephus, along with an unindicted co-conspirator, wanted none of this suicide nonsense; so he quickly calculated where he and his friend should stand in the vicious circle. But it is case of n=2, let’s consider more.</p>
-<a id="more"></a>
-<h1 id="regularity-when-n-3"><a href="#regularity-when-n-3" class="headerlink" title="regularity when n = 3"></a>regularity when n = 3</h1><p>Whenever a person is passed over, we can assign a new number.<br>Thus, 1 and 2 become n+1 and n+2, then 3 is executed; 4 and 5 become<br>n+3 and n+4, then 6 is executed; …; 3k+1 and 3k+2 become n+2k+1<br>and n+2k+2, then 3k+3 is executed; … then 3n is executed (or left to<br>survive). For example, when n = 10 the numbers are</p>
-<div class="table-container">
+        <h1 id="Definition"><a href="#Definition" class="headerlink" title="Definition"></a>Definition</h1><script type="math/tex; mode=display">
+\dbinom{n}{k} = \begin{cases}
+\frac{r(r−1)\cdots(r−k+1)}{k(k − 1) \cdots(1)} = \frac{r^{\underline{k}}}{k!},& integer\ k\geqslant 0;\\
+0, & integer < 0;
+\end{cases}</script><a id="more"></a>
+<h1 id="binomial-Coefficient-identities"><a href="#binomial-Coefficient-identities" class="headerlink" title="binomial Coefficient identities"></a>binomial Coefficient identities</h1><div class="table-container">
 <table>
 <thead>
 <tr>
-<th style="text-align:center">1</th>
-<th style="text-align:center">2</th>
-<th style="text-align:center">3</th>
-<th style="text-align:center">4</th>
-<th style="text-align:center">5</th>
-<th style="text-align:center">6</th>
-<th style="text-align:center">7</th>
-<th style="text-align:center">8</th>
-<th style="text-align:center">9</th>
-<th style="text-align:center">10</th>
+<th>$\dbinom{n}{k} = \frac{n!}{k!(n-k)!}$</th>
+<th>integer $ n \geqslant k &gt; 0$</th>
+<th>5.3</th>
+<th>factorial expansion</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align:center">11</td>
-<td style="text-align:center">12</td>
-<td style="text-align:center"></td>
-<td style="text-align:center">13</td>
-<td style="text-align:center">14</td>
-<td style="text-align:center"></td>
-<td style="text-align:center">15</td>
-<td style="text-align:center">16</td>
-<td style="text-align:center"></td>
-<td style="text-align:center">17</td>
+<td>$\dbinom{n}{k} = \dbinom{n}{n-k}$</td>
+<td>integer $n \geqslant 0$,  integer k</td>
+<td>5.4</td>
+<td>symmetry</td>
 </tr>
 <tr>
-<td style="text-align:center">18</td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
-<td style="text-align:center">19</td>
-<td style="text-align:center">20</td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
-<td style="text-align:center">21</td>
-<td style="text-align:center"></td>
-<td style="text-align:center">22</td>
+<td>$\dbinom{r}{k} =\frac{r}{k} \dbinom{n-1}{k-1}$</td>
+<td>integer $k \ne 0$</td>
+<td>5.5</td>
+<td>absorption/extraction</td>
 </tr>
 <tr>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
-<td style="text-align:center">23</td>
-<td style="text-align:center">24</td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
-<td style="text-align:center">25</td>
+<td>$\dbinom{r}{k} = \dbinom{r-1}{k} + \dbinom{r-1}{k-1}$</td>
+<td>integer k</td>
+<td>5.8</td>
+<td>addition/induction</td>
 </tr>
 <tr>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
-<td style="text-align:center">26</td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
-<td style="text-align:center">27</td>
+<td>$\dbinom{r}{k} = (-1)^k \dbinom{k-r-1}{k}$</td>
+<td>integer k</td>
+<td>5.14</td>
+<td>upper negation</td>
 </tr>
 <tr>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
-<td style="text-align:center">28</td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
+<td>$\dbinom{r}{m}\dbinom{m}{k} = \dbinom{r}{k}\dbinom{r-k}{m-k}$</td>
+<td>integer m,k</td>
+<td>5.21</td>
+<td>trinomial revision</td>
 </tr>
 <tr>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
-<td style="text-align:center">29</td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
+<td><script type="math/tex">\sum_k\dbinom{r}{k}x^ky^{r-k} = (x+y)^r</script></td>
+<td>integer $r\geqslant 0$, or \</td>
+<td>x/y\</td>
+<td>&lt;1</td>
+<td>5.12</td>
+<td>binomial theorem</td>
 </tr>
 <tr>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
-<td style="text-align:center">30</td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
+<td><script type="math/tex">\sum_{k \leqslant n}\dbinom{r+k}{k} = \dbinom{r+n+1}{n}</script></td>
+<td>integer n</td>
+<td>5.9</td>
+<td>parallel summation</td>
+</tr>
+<tr>
+<td><script type="math/tex">\sum_{0\leqslant k \leqslant n}\dbinom{k}{m}=\dbinom{n+1}{m+1}</script></td>
+<td>integers $m,n\geqslant 0$</td>
+<td>5.10</td>
+<td>upper summation</td>
+</tr>
+<tr>
+<td><script type="math/tex">\sum_k \dbinom{r}{k}\dbinom{s}{n-k} = \dbinom{r+s}{k}</script></td>
+<td>integer n</td>
+<td>5.27</td>
+<td>Vandermonde convolution</td>
+</tr>
+<tr>
+<td><script type="math/tex">\sum_k \dbinom{r}{m+k}\dbinom{s}{n-k} = \dbinom{r+s}{m+n}</script></td>
+<td>integers m,n</td>
+<td>5.22</td>
+<td></td>
+</tr>
+<tr>
+<td><script type="math/tex">\sum_k \dbinom{l}{m+k}\dbinom{s}{n+k} = \dbinom{l+s}{l-m+n}</script></td>
+<td>integer $l\geqslant 0$, integers m,n</td>
+<td>5.23</td>
+<td></td>
+</tr>
+<tr>
+<td><script type="math/tex">\sum_k \dbinom{l}{m+k}\dbinom{s+k}{n}(-1)^k = (-1)^{l+m}\dbinom{s-m}{n-l}</script></td>
+<td>integer $l\geqslant 0$, integers m,n</td>
+<td>5.24</td>
+<td></td>
+</tr>
+<tr>
+<td><script type="math/tex">\sum_{k\leqslant l} \dbinom{l-k}{m}\dbinom{s}{k-n}(-1)^k = (-1)^{l+m}\dbinom{s-m-1}{l-m-n}</script></td>
+<td>integers $l,m,n\geqslant 0$</td>
+<td>5.25</td>
+<td></td>
+</tr>
+<tr>
+<td><script type="math/tex">\sum_{0\leqslant k\leqslant l} \dbinom{l-k}{m}\dbinom{q+k}{n} = \dbinom{l+q+1}{m+n+1}</script></td>
+<td>integers $l,m\geqslant      0$,integers $n\geqslant      q\geqslant 0$</td>
+<td>5.26</td>
 </tr>
 </tbody>
 </table>
 </div>
-<h1 id="process-of-analysing"><a href="#process-of-analysing" class="headerlink" title="process of analysing"></a>process of analysing</h1><ul>
-<li>Given N &gt; n, we can infer N is $n+2k+1$(when previous number is $3k+1$) or $n+2k+2$(when previous number is $3k+2$)  by observing above queue.</li>
-<li>$\frac{N-n-1}{2} - 1  = \frac{N-n-3}{2}  &lt; \frac{N-n-2}{2} \leqslant k \leqslant \frac{N-n-1}{2} $, hence $k = \lfloor \frac{N-n-1}{2} \rfloor$.</li>
-<li>Previous number is $3k+(N-n-2k)=k+N-n =  \lfloor \frac{N-n-1}{2} \rfloor+N-n ​$.</li>
-<li>When N = 3n, it must have previous number $N_p = \lfloor \frac{N-n-1}{2} \rfloor+N-n$. It is fine until $N_p \leqslant n$, then we have an answer.</li>
-</ul>
-<h1 id="Simplify-the-form"><a href="#Simplify-the-form" class="headerlink" title="Simplify the form"></a>Simplify the form</h1><ul>
-<li>use the variable $D = 3n + 1 − N$ in place of $N$.<script type="math/tex; mode=display">
-D:=1;\\
-while \ \ D\leqslant 2n \ \ do \ \ D:=\left \lceil \frac{3}{2}D \right \rceil; \\
-J3(n) := 3n+1−D</script></li>
-</ul>
 
       
     </div>
@@ -474,8 +460,8 @@ J3(n) := 3n+1−D</script></li>
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/10/28/index/" rel="next" title="Introduce">
-                <i class="fa fa-chevron-left"></i> Introduce
+              <a href="/2019/02/01/sums/" rel="next" title="sums">
+                <i class="fa fa-chevron-left"></i> sums
               </a>
             
           </div>
@@ -484,8 +470,8 @@ J3(n) := 3n+1−D</script></li>
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2019/02/01/sums/" rel="prev" title="sums">
-                sums <i class="fa fa-chevron-right"></i>
+              <a href="/2019/02/27/Shadowsocks/" rel="prev" title="Shadowsocks Setup">
+                Shadowsocks Setup <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -609,7 +595,7 @@ J3(n) := 3n+1−D</script></li>
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Josephus-Problem"><span class="nav-number">1.</span> <span class="nav-text">Josephus Problem</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#regularity-when-n-3"><span class="nav-number">2.</span> <span class="nav-text">regularity when n = 3</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#process-of-analysing"><span class="nav-number">3.</span> <span class="nav-text">process of analysing</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Simplify-the-form"><span class="nav-number">4.</span> <span class="nav-text">Simplify the form</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Definition"><span class="nav-number">1.</span> <span class="nav-text">Definition</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#binomial-Coefficient-identities"><span class="nav-number">2.</span> <span class="nav-text">binomial Coefficient identities</span></a></li></ol></div>
             
 
           </div>
