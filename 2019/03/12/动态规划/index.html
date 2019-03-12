@@ -79,13 +79,17 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/categories/Concrete-Math/Floors-and-Ceilings/index.html">
+<meta name="description" content="问题​    最长公共子序列问题（LCS）。给定两个子序列 A 和 B求长度最大的公共子序列。例如 1, 5, 2, 6, 8, 7 和 2, 3, 5, 6, 9, 8, 4 的最长公共子序列为 5, 6, 8（另一个解是 2, 6, 8)。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="动态规划">
+<meta property="og:url" content="http://yoursite.com/2019/03/12/动态规划/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="问题​    最长公共子序列问题（LCS）。给定两个子序列 A 和 B求长度最大的公共子序列。例如 1, 5, 2, 6, 8, 7 和 2, 3, 5, 6, 9, 8, 4 的最长公共子序列为 5, 6, 8（另一个解是 2, 6, 8)。">
 <meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2019-03-12T11:18:29.703Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo">
+<meta name="twitter:title" content="动态规划">
+<meta name="twitter:description" content="问题​    最长公共子序列问题（LCS）。给定两个子序列 A 和 B求长度最大的公共子序列。例如 1, 5, 2, 6, 8, 7 和 2, 3, 5, 6, 9, 8, 4 的最长公共子序列为 5, 6, 8（另一个解是 2, 6, 8)。">
 
 
 
@@ -115,13 +119,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/categories/Concrete-Math/Floors-and-Ceilings/">
+  <link rel="canonical" href="http://yoursite.com/2019/03/12/动态规划/">
 
 
 
 
 
-  <title>Category: Floors and Ceilings | Hexo</title>
+  <title>动态规划 | Hexo</title>
   
 
 
@@ -140,7 +144,7 @@
     
   
 
-  <div class="container sidebar-position-left ">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
@@ -214,53 +218,287 @@
           <div id="content" class="content">
             
 
-  
-  
-  
-  <div class="post-block category">
+  <div id="posts" class="posts-expand">
+    
 
-    <div id="posts" class="posts-collapse">
-      <div class="collection-title">
-        <h1>Floors and Ceilings<small>Category</small>
-        </h1>
-      </div>
+  
 
-      
-        
+  
+  
+  
 
   <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-    <header class="post-header">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/03/12/动态规划/">
 
-      <h2 class="post-title">
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+
+    
+      <header class="post-header">
+
         
-            <a class="post-title-link" href="/2019/01/31/Josephus problem/" itemprop="url">
-              
-                <span itemprop="name">Josephus problem</span>
-              
-            </a>
         
-      </h2>
+          <h1 class="post-title" itemprop="name headline">动态规划</h1>
+        
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-01-31T09:46:01+08:00" content="2019-01-31">
-          01-31
-        </time>
-      </div>
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-03-12T18:19:06+08:00">
+                2019-03-12
+              </time>
+            
 
-    </header>
-  </article>
+            
 
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+                  <a href="/categories/Algorithm/" itemprop="url" rel="index">
+                    <span itemprop="name">Algorithm</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h1 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h1><p>​    <strong>最长公共子序列问题（LCS）</strong>。给定两个子序列 A 和 B求长度最大的公共子序列。例如 1, 5, 2, 6, 8, 7 和 2, 3, 5, 6, 9, 8, 4 的最长公共子序列为 5, 6, 8（另一个解是 2, 6, 8)。</p>
+<a id="more"></a>
+<h1 id="解题过程"><a href="#解题过程" class="headerlink" title="解题过程"></a>解题过程</h1><ul>
+<li><p>分<code>阶段</code></p>
+<p>两个字符串是可以互换考虑，因此需要有两个阶段变量$i,j​$</p>
+</li>
+<li><p><code>假设解</code>已求得，用d表示</p>
+<p>$d(i,j) = LCS\ \ of\ \  A[1\cdots i]\ \ and\ \  B[1\cdots j]​$</p>
+</li>
+<li><p><code>列表</code></p>
+</li>
+</ul>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th>d</th>
+<th>i</th>
+<th>1</th>
+<th>2</th>
+<th>3</th>
+<th>4</th>
+<th>5</th>
+<th>6</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>j</td>
+<td>B\A</td>
+<td>1</td>
+<td>5</td>
+<td>2</td>
+<td>6</td>
+<td>8</td>
+<td>7</td>
+</tr>
+<tr>
+<td>1</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>2</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>3</td>
+<td>5</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>4</td>
+<td>6</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>2</td>
+<td>2</td>
+<td>2</td>
+</tr>
+<tr>
+<td>5</td>
+<td>9</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>2</td>
+<td>2</td>
+<td>2</td>
+</tr>
+<tr>
+<td>6</td>
+<td>8</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>2</td>
+<td>3</td>
+<td>3</td>
+</tr>
+<tr>
+<td>7</td>
+<td>4</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>2</td>
+<td>3</td>
+<td>3</td>
+</tr>
+</tbody>
+</table>
+</div>
+<ul>
+<li><p>表达式</p>
+<ul>
+<li>当$A_i = B_j$时，$d(i,j)=d(i-1,j-1) + 1$</li>
+<li>当$A_i\ne B_j$时，$d(i,j)=\max\{d(i-1,j),d(i,j-1)\}$</li>
+</ul>
+</li>
+<li><p>正确性推理</p>
+<p>分情况和反证法</p>
+</li>
+<li><p>简单实例验证</p>
+</li>
+<li><p>反推解序列</p>
+</li>
+</ul>
 
       
     </div>
+    
+    
+    
 
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/02/27/Shadowsocks/" rel="next" title="Shadowsocks Setup">
+                <i class="fa fa-chevron-left"></i> Shadowsocks Setup
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </div>
   
   
   
+  </article>
 
-  
 
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -268,6 +506,10 @@
 
 
           
+
+  
+
+
 
         </div>
         
@@ -288,8 +530,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
             
@@ -340,6 +591,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#问题"><span class="nav-number">1.</span> <span class="nav-text">问题</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#解题过程"><span class="nav-number">2.</span> <span class="nav-text">解题过程</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -473,6 +740,10 @@
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
